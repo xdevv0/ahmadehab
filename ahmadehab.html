@@ -29,12 +29,47 @@
             padding: 35px 20px;
             text-align: center;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+            position: relative; /* لتمكين التموضع المطلق للأيقونات العلوية */
         }
+
+        /* تنسيق الأيقونات العلوية (فوق على اليسار) */
+        .top-social-icons {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-icon-btn {
+            width: 38px;
+            height: 38px;
+            background: #24211d;
+            border: 1px solid rgba(212, 197, 169, 0.3);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #f0e6d2;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+        }
+
+        .top-icon-btn:hover {
+            transform: translateY(-2px);
+            border-color: #d4c5a9;
+            background: #2f2b26;
+        }
+
+        .top-icon-btn.whatsapp:hover { color: #25D366; border-color: #25D366; }
+        .top-icon-btn.instagram:hover { color: #E1306C; border-color: #E1306C; }
 
         .logo-container {
             width: 120px;
             height: 120px;
-            margin: 0 auto 15px auto;
+            margin: 10px auto 15px auto; /* مساحة علوية لتبتعد عن الأيقونات */
             border-radius: 50%;
             overflow: hidden;
             border: 3px solid #d4c5a9; /* إطار بيج للصورة */
@@ -130,6 +165,16 @@
 <body>
 
     <div class="card-container">
+        <!-- أيقونات التواصل في أعلى اليسار -->
+        <div class="top-social-icons">
+            <a href="https://wa.me/972522745019" class="top-icon-btn whatsapp" target="_blank" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://instagram.com/ahmad.ehab7" class="top-icon-btn instagram" target="_blank" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
         <!-- صورة الشخص الشخصية -->
         <div class="logo-container">
             <img src="profile.jpeg" alt="Ahmad Ehab" id="c-logo">
@@ -140,7 +185,7 @@
         
         <!-- نبذة تعريفية قصيرة -->
         <p class="bio">
-           𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 
+            𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 
         </p>
         
         <!-- أزرار التواصل -->
@@ -149,7 +194,7 @@
             <a href="https://wa.me/972522745019" class="link-btn whatsapp" target="_blank">
                 <div class="link-content">
                     <i class="fa-brands fa-whatsapp"></i>
-                    <span>whatsapp </span>
+                    <span>whatsapp</span>
                 </div>
                 <i class="fa-solid fa-angle-left arrow"></i>
             </a>
@@ -158,14 +203,14 @@
             <a href="https://instagram.com/ahmad.ehab7" class="link-btn instagram" target="_blank">
                 <div class="link-content">
                     <i class="fa-brands fa-instagram"></i>
-                    <span>instagram </span>
+                    <span>instagram</span>
                 </div>
                 <i class="fa-solid fa-angle-left arrow"></i>
             </a>
         </div>
 
         <div class="footer">
-           جميع الحقوق محفوظة © 2026 - Des Program - Digital Card .
+            جميع الحقوق محفوظة © 2026 - Des Program - Digital Card .
         </div>
     </div>
 
