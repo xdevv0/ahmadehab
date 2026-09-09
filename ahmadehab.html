@@ -18,43 +18,7 @@
             justify-content: center;
             align-items: center;
             padding: 20px;
-            position: relative; /* لجعل التموضع المطلق للأيقونات منسوباً للصفحة كاملة */
         }
-
-        /* تنسيق الأيقونات لتكون في زاوية الصفحة بالأساس (مثل سيناريو) */
-        .page-social-icons {
-            position: absolute;
-            top: 25px;
-            left: 25px; /* أو right: 25px حسب الرغبة */
-            display: flex;
-            gap: 12px;
-            z-index: 10;
-        }
-
-        .page-icon-btn {
-            width: 42px;
-            height: 42px;
-            background: #1a1816;
-            border: 1px solid rgba(212, 197, 169, 0.3);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #f0e6d2;
-            text-decoration: none;
-            font-size: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-        }
-
-        .page-icon-btn:hover {
-            transform: translateY(-3px);
-            border-color: #d4c5a9;
-            background: #2f2b26;
-        }
-
-        .page-icon-btn.whatsapp:hover { color: #25D366; border-color: #25D366; }
-        .page-icon-btn.instagram:hover { color: #E1306C; border-color: #E1306C; }
 
         .card-container {
             width: 100%;
@@ -165,16 +129,6 @@
 </head>
 <body>
 
-    <!-- أيقونات التواصل في زاوية الصفحة العلوية اليسرى (مثل سيناريو) -->
-    <div class="page-social-icons">
-        <a href="https://wa.me/972522745019" class="page-icon-btn whatsapp" target="_blank" title="WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a href="https://instagram.com/ahmad.ehab7" class="page-icon-btn instagram" target="_blank" title="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-    </div>
-
     <div class="card-container">
         <!-- صورة الشخص الشخصية -->
         <div class="logo-container">
@@ -186,7 +140,7 @@
         
         <!-- نبذة تعريفية قصيرة -->
         <p class="bio">
-            𝐂𝐨𝐧𝐭𝐞𝐧𝐭 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 
+            𝐂𝐨𝐧𝐭ent 𝐂𝐫𝐞𝐚𝐭𝐨𝐫 
         </p>
         
         <!-- أزرار التواصل -->
